@@ -1,27 +1,54 @@
 {
-  "name": "eteyen-site",
+  "name": "new",
   "version": "1.0.0",
-  "private": true,
-  "description": "eteyen-site",
-  "author": "Etienne Mustow",
-  "keywords": [
-    "gatsby"
-  ],
-  "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
-  },
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
   "dependencies": {
-    "gatsby": "^2.32.3",
-    "gatsby-image": "^2.11.0",
-    "gatsby-plugin-google-analytics": "^2.11.0",
-    "gatsby-plugin-sharp": "^2.14.1",
-    "gatsby-source-filesystem": "^2.11.0",
-    "gatsby-transformer-sharp": "^2.12.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
-  }
+    "@steveeeie/react-page-transition": "^1.2.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "emailjs-com": "^2.6.4",
+    "express": "^4.17.1",
+    "express-pino-logger": "^5.0.0",
+    "heroku-proxy": "^2.1.1",
+    "jquery": "^3.5.1",
+    "lerp": "1.0.3",
+    "modal-video": "^2.4.2",
+    "node-env-run": "^4.0.2",
+    "nodemailer": "^6.4.17",
+    "nodemon": "^2.0.6",
+    "npm-run-all": "^4.1.5",
+    "object-path": "^0.11.5",
+    "pino-colada": "^2.1.0",
+    "rbx": "^2.2.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-modal-video": "^1.2.6",
+    "react-reveal": "^1.2.2",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.2.0",
+    "react-transition-group": "^4.4.1",
+    "styled-components": "^5.2.1"
+  },
+  "devDependencies": {
+    "emailjs-com": "^2.6.4",
+    "typescript": "3.3.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "server": "node-env-run server --exec nodemon | pino-colada",
+    "dev": "run-p server start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
