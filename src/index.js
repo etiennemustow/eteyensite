@@ -245,6 +245,9 @@ class Home extends Component {
               <Contact />
             </div>
           </div>
+            <div className="centered-text">
+          <p className="love">Made with &#128153; by Etienne Mustow</p>
+          </div>
         </div>
       </>
     )

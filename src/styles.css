@@ -8,7 +8,20 @@
 	box-sizing: border-box;
 } */
 
+.site-footer .icon {
+	font-size: 20px;
+}
 
+.site-footer {
+	margin-left: 2px;
+	margin-right: 2px;
+  text-align: center;
+}
+.love {
+  font-size: 0.8em;
+  /* padding-left: 20%;
+  padding-right: 20%; */
+}
 html {
   scroll-behavior: smooth;
   overflow-y: scroll
