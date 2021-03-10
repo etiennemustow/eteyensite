@@ -15,8 +15,8 @@ html {
 }
 
 #profile {
-  height: 300px;
-  width: 300px;
+  height: 150px;
+  width: 150px;
 }
 
 html, body {
@@ -308,7 +308,6 @@ figure.gallery__item.gallery__item--5 {
 @media screen and (min-width: 25em) {
   h1 { font-size: 1.4em;
   }
-
   .text-header{
     font-size: 0.6em;
   }
@@ -322,7 +321,43 @@ figure.gallery__item.gallery__item--5 {
   h2 {
     font-size: 0.7em;
   }
+  #about{
+    padding-top: 10em;
+    padding-bottom: 8em;
+  }
+  #projects{
+    padding-top: 10em;
+    padding-bottom: 8em;
+  }
+  .content{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #contact{
+    padding-top: 10em;
+  }
+  #profile {
+    height: 200px;
+    width: 200px;
+  }
+  .grid-container-about {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding-left: 5%;
+    text-align: center;
+    align-items: center;
+}
 
+.grid-container-projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  object-fit: cover;
+  grid-gap: 5px;
+
+}
+  
 
   .boxed {
     padding-top: 20%;

@@ -217,7 +217,7 @@ class Home extends Component {
                   </div>
                 </div>
                 <div className="float-child">
-                  <img className="d-block" id="profile" src={state.icons.profile} alt="Profile picture of me" ></img>
+                  <img id="profile" src={state.icons.profile} alt="Profile picture of me" ></img>
                 </div>
               </div>
             </div>
