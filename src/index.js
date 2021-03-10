@@ -38,42 +38,42 @@ class NavBar extends React.Component {
   }
 
 
- myFunction = () => {
-  var navbar = this.navbar.current
-  var navbarWrapper = this.navbarWrapper.current
-  var sticky = navbarWrapper.offsetTop;
-  console.log(document.documentElement.scrollTop)
-  console.log(document.documentElement.scrollTop > sticky)
-  if (document.documentElement.scrollTop >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
+  myFunction = () => {
+    var navbar = this.navbar.current
+    var navbarWrapper = this.navbarWrapper.current
+    var sticky = navbarWrapper.offsetTop;
+    console.log(document.documentElement.scrollTop)
+    console.log(document.documentElement.scrollTop > sticky)
+    if (document.documentElement.scrollTop >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
   }
-}
 
   render() {
     return (
       <div className="absolute-wrapper" ref={this.navbarWrapper}>
-      <nav className="navbar navbar-expand-lg navbar-light" id="navbar" ref={this.navbar}>
-        <a className="navbar-brand" href="/">Etienne Mustow | Software Developer</a>
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
+        <nav className="navbar navbar-expand-lg navbar-light" id="navbar" ref={this.navbar}>
+          <a className="navbar-brand" href="/">Etienne Mustow | Software Developer</a>
+          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
 
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav mr-auto">
-            <li className="nav-item">
-              <a className="nav-link" href="#about">About</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#projects">Projects</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav mr-auto">
+              <li className="nav-item">
+                <a className="nav-link" href="#about">About</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#projects">Projects</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
     )
   }
@@ -88,7 +88,7 @@ class Contact extends Component {
           <div className="boxed">
             <div className="contact-text">
               <div className="centered-text">
-                <h2 className="contact-heading underline">Contact</h2>
+                <h1 className="underline">Contact</h1>
                 <br></br>
                 <div className="underline"><h2>Get in touch:</h2></div>
                 <div className=""><a className="" href={`mailto:etncodes@gmail.com`}><h2>etncodes@gmail.com</h2></a></div>
@@ -167,38 +167,85 @@ function Heading({ text }) {
   )
 }
 
+function Subheading({ text }) {
+  return (
+    <div className="sub-heading">
+      <h2>{text}</h2>
+    </div>
+  )
+}
+
 
 
 class Home extends Component {
+  constructor() {
+    super();
+    this.state = {
+      projects: state.content.projects,
+    };
+  }
 
   render() {
     return (
       <>
 
         <div className="page">
-          <Heading text="Hey, I'm Etienne." />
+          <div className="centered-text">
+            <div className="heading">
+              <h1>Hi, I'm Etienne</h1>
+            </div>
+            <div className="sub-heading">
+              <h2>I'm a junior software developer and Computer Science student</h2>
+            </div>
+          </div>
+          <br></br>
         </div>
-          <NavBar />
+        <NavBar />
         <div>
           <br></br>        <br></br>
           <br></br>
           <br></br>
           <div className="content">
             <section id="about">
-              <h1>About</h1>
-              <h2>I'm a junior software developer with just over a year's experience working in start-ups and mid-size businesses.
-        I'm also a Computer Science student at City, University of London</h2>
+              <div className="centered-text">
+                <h1 className="underline">About</h1>
+              </div>
+              <br></br>
+              <div className="grid-container-about">
+                <div className="float-child">
+                  <div className="">
+                    <h2>I'm a junior software developer with just over a year's experience working in start-ups and mid-size businesses from fintech to martech. 
+                      I love to work on both the front and backend and have a preference for dynamically typed languages but believe on picking the right tool for the job. 
+                      I'm also a Computer Science student at City, University of London.</h2>
+                  </div>
+                </div>
+                <div className="float-child">
+                  <img className="d-block" id="profile" src={state.icons.profile} alt="Profile picture of me" ></img>
+                </div>
+              </div>
             </section>
             <br></br>        <br></br>
             <br></br>
             <br></br>
+
             <section id="projects">
-              <h1>Projects</h1>
-              <h2>Here are some things I've built</h2>
+              <div className="centered-text">
+                <h1 className="underline">Projects</h1>
+              </div>
+              <h2>Here are some things I've built:</h2>
+              <div className="grid-container-projects">
+                {this.state.projects.map((index) =>
+                  <div className="overlay">
+                    <a className="" href={index.link}>
+                      <img className="gallery__img" src={index.image}></img>
+                      <div className="text-header">{index.header}</div>
+                      <div className="text-footer">{index.text}</div>
+                    </a>
+                  </div>
+                )}
+              </div>
             </section>
             <br></br>        <br></br>
-            <br></br>
-            <br></br>
             <section id="contact">
               <Contact />
             </section>
