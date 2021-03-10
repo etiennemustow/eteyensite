@@ -192,7 +192,7 @@ class Home extends Component {
         <div className="page">
           <div className="centered-text">
             <div className="heading">
-              <h1>Hi, I'm Etienne</h1>
+              <h1>Hi, I'm <span style={{color: "#dda5f9"}}>Etienne</span></h1>
             </div>
             <div className="sub-heading">
               <h2>I'm a junior software developer and Computer Science student</h2>
@@ -202,11 +202,8 @@ class Home extends Component {
         </div>
         <NavBar />
         <div>
-          <br></br>        <br></br>
-          <br></br>
-          <br></br>
           <div className="content">
-            <section id="about">
+            <div id="about">
               <div className="centered-text">
                 <h1 className="underline">About</h1>
               </div>
@@ -223,12 +220,10 @@ class Home extends Component {
                   <img className="d-block" id="profile" src={state.icons.profile} alt="Profile picture of me" ></img>
                 </div>
               </div>
-            </section>
-            <br></br>        <br></br>
-            <br></br>
-            <br></br>
+            </div>
+           
 
-            <section id="projects">
+            <div id="projects">
               <div className="centered-text">
                 <h1 className="underline">Projects</h1>
               </div>
@@ -244,11 +239,11 @@ class Home extends Component {
                   </div>
                 )}
               </div>
-            </section>
+            </div>
             <br></br>        <br></br>
-            <section id="contact">
+            <div id="contact">
               <Contact />
-            </section>
+            </div>
           </div>
         </div>
       </>
