@@ -27,6 +27,13 @@ html {
   overflow-y: scroll
 }
 
+:target:before {
+  content: "";
+  display: block;
+  height: 100px;
+  margin: -100px 0 0;
+}
+
 
 html, body {
   margin:0;
@@ -198,20 +205,21 @@ h2 {
   padding-right: 10px;
 }
 #about{
-  padding-top: 12em;
+  padding-top: 10em;
   padding-bottom: 8em;
 }
 #projects{
-  padding-top: 12em;
+  padding-top: 10em;
   padding-bottom: 8em;
+}
+#contact{
+  padding-top: 10em;
 }
 .content{
   padding-left: 10px;
   padding-right: 10px;
 }
-#contact{
-  padding-top: 10em;
-}
+
 #profile {
   height: 200px;
   width: 200px;
@@ -284,13 +292,14 @@ figure.gallery__item.gallery__item--5 {
     padding-top: 10em;
     padding-bottom: 8em;
   }
+  #contact{
+    padding-top: 10em;
+  }
   .content{
     padding-left: 10px;
     padding-right: 10px;
   }
-  #contact{
-    padding-top: 10em;
-  }
+ 
   #profile {
     height: 200px;
     width: 200px;
@@ -365,19 +374,20 @@ figure.gallery__item.gallery__item--5 {
   }
   #about{
     padding-top: 10em;
-    padding-bottom: 8em;
+    padding-bottom: 10em;
   }
   #projects{
     padding-top: 10em;
-    padding-bottom: 8em;
+    padding-bottom: 10em;
+  }
+  #contact{
+    padding-top: 10em;
   }
   .content{
     padding-left: 10px;
     padding-right: 10px;
   }
-  #contact{
-    padding-top: 10em;
-  }
+  
   #profile {
     height: 200px;
     width: 200px;

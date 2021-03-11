@@ -42,8 +42,7 @@ class NavBar extends React.Component {
     var navbar = this.navbar.current
     var navbarWrapper = this.navbarWrapper.current
     var sticky = navbarWrapper.offsetTop;
-    console.log(document.documentElement.scrollTop)
-    console.log(document.documentElement.scrollTop > sticky)
+
     if (document.documentElement.scrollTop >= sticky) {
       navbar.classList.add("sticky")
     } else {
