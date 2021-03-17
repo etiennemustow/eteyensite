@@ -23,7 +23,7 @@ const state = {
         header: "Operating Systems Calculator",
         image: "/systems_calculator.png",
         text: "A command-line calculator in Python for common calculations in operating systems",
-        link: "https://github.com/etiennemustow/systems_calculator",
+        link: "/calculator",
         css: "gallery__item gallery__item--"
       },
       {
