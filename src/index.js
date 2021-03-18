@@ -264,71 +264,13 @@ class Calculator extends Component {
   render() {
     return (
       <>
-
-        {/* <div className="page">
-          <div className="centered-text">
-            <div className="heading">
-              <h1>Hi, I'm <span style={{color: "#dda5f9"}}>Etienne</span></h1>
-            </div>
-            <div className="sub-heading">
-              <h2>I'm a junior software developer and Computer Science student</h2>
-            </div>
-          </div>
-          <br></br>
-        </div> */}
-        {/* <NavBar /> */}
-        <div>
-          {/* <div className="content">
-            <div id="about">
-              <div className="centered-text">
-                <h1 className="underline">About</h1>
-              </div>
-              <br></br>
-              <div className="grid-container-about">
-                <div className="float-child">
-                  <div className="">
-                    <h2>I'm a junior software developer with just over a year's experience working in start-ups and mid-size businesses from fintech to martech. 
-                      I love to work on both the front and backend and have a preference for dynamically typed languages but believe on picking the right tool for the job. 
-                      I'm also a Computer Science student at City, University of London.</h2>
-                  </div>
-                </div>
-                <div className="float-child">
-                  <img id="profile" src={state.icons.profile} alt="Profile picture of me" ></img>
-                </div>
-              </div>
-            </div>
-           
-
-            <div id="projects">
-              <div className="centered-text">
-                <h1 className="underline">Projects</h1>
-              </div>
-              <h2>Here are some things I've built:</h2>
-              <div className="grid-container-projects">
-                {this.state.projects.map((index) =>
-                  <div className="overlay">
-                    <a className="" href={index.link}>
-                      <img className="gallery__img" src={index.image}></img>
-                      <div className="text-header">{index.header}</div>
-                      <div className="text-footer">{index.text}</div>
-                    </a>
-                  </div>
-                )}
-              </div>
-            </div>
-            <br></br>        <br></br>
-            <div id="contact">
-              <Contact />
-            </div> 
-          </div> */}
           <a className="nav-link" href="/">Back</a>
 
 
-          <iframe src="https://trinket.io/embed/python/6d11ba6d26?outputOnly=true&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-            <div className="centered-text">
+          <iframe src="https://trinket.io/embed/python/6d00b710aa?outputOnly=true&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>            
+          <div className="centered-text">
           <p className="love">Made with &#128153; by Etienne Mustow</p>
           </div>
-        </div>
       </>
     )
   }
