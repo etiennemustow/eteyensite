@@ -260,14 +260,14 @@ class Calculator extends Component {
       projects: state.content.projects,
     };
   }
-
   render() {
     return (
       <>
           <a className="nav-link" href="/">Back</a>
 
-          <iframe src="https://trinket.io/embed/python3/f4b18168a8?outputOnly=true&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+          <iframe src="https://trinket.io/embed/python3/8bd97730c2?outputOnly=true&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
           <div className="centered-text">
+          
           <p className="love">Made with &#128153; by Etienne Mustow</p>
           </div>
       </>

@@ -45,8 +45,6 @@ nav {
   border-bottom: 3px solid #8C9CEB;
 }
 
-
-
 .sticky {
   position: fixed;
   top: 0;
@@ -109,7 +107,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-transparent {
   font-weight: bold;
 }
 
-h1 { 
+h1 {
   font-size: 1em;
 }
 
